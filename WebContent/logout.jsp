@@ -4,39 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JAVA EE</title>
+<title>ONLINE</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
 	<%@include file="includes/header.jsp"%>
-
 	<div id="wrapper">
 		<div id="main">
 			<div id="content">
 				<div class="innertube">
-					<h1>Switch Example</h1>
-
 					<%
-						int number = 2;
-						switch (number) {
-						case 1:
-							out.println("1!");
-							break;
-						case 2:
-							out.println("2!");
-							break;
-						default:
-							out.println("DEFAULT!");
-						}
+						session.removeAttribute("username");
+						response.sendRedirect("index.jsp");
 					%>
 				</div>
 			</div>
 		</div>
-
-
 		<%@include file="includes/menu.jsp"%>
-
 	</div>
 
 	<%@include file="includes/footer.jsp"%>

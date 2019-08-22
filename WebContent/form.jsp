@@ -16,10 +16,10 @@
 			<div id="content">
 				<div class="innertube">
 					<h1>FORM</h1>
-					<form method="post" action="recebePost.jsp">
-						<input value="Lucas" required type="text" name="name"
-							placeholder="Digite seu nome..." /> <br />
-						<button type="submit">Enviar</button>
+					<form method="post" action="receivePost.jsp">
+						<input required type="text" name="name"
+							placeholder="Your name here..." /> <br />
+						<button type="submit">Send</button>
 					</form>
 				</div>
 			</div>

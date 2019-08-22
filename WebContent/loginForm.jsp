@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JAVA EE</title>
+<title>AUTH</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -15,25 +15,21 @@
 		<div id="main">
 			<div id="content">
 				<div class="innertube">
-					<h1>Switch Example</h1>
+					<h1>LOGIN</h1>
 
-					<%
-						int number = 2;
-						switch (number) {
-						case 1:
-							out.println("1!");
-							break;
-						case 2:
-							out.println("2!");
-							break;
-						default:
-							out.println("DEFAULT!");
-						}
-					%>
+					<br />
+
+
+					<form method="post" action="login.jsp">
+						<div align="center">
+							<input required type="text" name="username" /> <br /> <input
+								type="password" name="password" /> <br />
+							<button type="submit">Send</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-
 
 		<%@include file="includes/menu.jsp"%>
 

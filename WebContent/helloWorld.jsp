@@ -15,10 +15,10 @@
 		<div id="main">
 			<div id="content">
 				<div class="innertube">
-					<h1>Olá Mundo</h1>
+					<h1>Hello!</h1>
 					
 					<%
-					out.println("Hello usando diretica \"out.printlb\"...");
+					out.println("Hello !!");
 					%>
 				</div>
 			</div>

@@ -1,3 +1,3 @@
 <footer id="footer">
-	<h1>Rodapé</h1>
+	<h1>Footer</h1>
 </footer>
