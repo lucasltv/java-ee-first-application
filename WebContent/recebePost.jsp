@@ -16,17 +16,15 @@
 			<div id="content">
 				<div class="innertube">
 					<h1>Dados postados</h1>
+					<%
+						String nome = request.getParameter("name");
+						out.println("Nome digitado: " + nome);
+						out.println("<br/>");
+						if (nome.equals("Lucas")) {
+							out.println("Você é Lucas!");
+						}
+					%>
 				</div>
-
-				<%
-					String nome = request.getParameter("name");
-					out.println("Nome digitado: " + nome );
-					out.println("<br/>");
-					if(nome.equals("Lucas")){
-						out.println("Você é Lucas!");	
-					}
-					
-				%>
 			</div>
 		</div>
 

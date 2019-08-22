@@ -15,12 +15,21 @@
 		<div id="main">
 			<div id="content">
 				<div class="innertube">
-					<h1>FORM</h1>
-					<form method="post" action="recebePost.jsp">
-						<input value="Lucas" required type="text" name="name"
-							placeholder="Digite seu nome..." /> <br />
-						<button type="submit">Enviar</button>
-					</form>
+					<h1>Switch</h1>
+
+					<%
+						int numero = 2;
+						switch (numero) {
+						case 1:
+							out.println("1!");
+							break;
+						case 2:
+							out.println("2!");
+							break;
+						default:
+							out.println("DEFAULT!");
+						}
+					%>
 				</div>
 			</div>
 		</div>

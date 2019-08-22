@@ -8,29 +8,28 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	
-	<%@include file="../includes/header.jsp" %>
+
+	<%@include file="../includes/header.jsp"%>
 
 	<div id="wrapper">
 		<div id="main">
 			<div id="content">
 				<div class="innertube">
-					<h1>Olá Mundo</h1>
-					
+					<h1>Seu IP</h1>
+
 					<%
-						String ip = request.getRemoteHost();
-					
+						String ip = request.getRemoteAddr();
 						out.println("Seu IP: " + ip);
 					%>
 				</div>
 			</div>
 		</div>
 
-	
-	<%@include file="../includes/menu.jsp" %>
-	
+
+		<%@include file="../includes/menu.jsp"%>
+
 	</div>
-	
-	<%@include file="../includes/footer.jsp" %>
+
+	<%@include file="../includes/footer.jsp"%>
 </body>
 </html>
